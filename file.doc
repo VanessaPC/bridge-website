@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Comcarde</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="item transition, css animation, inspiration, web design" />
+  <meta name="author" content="Vanessa" />
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+  </script>
+</head>
+<body>
+    <!--This is where the NAVIGATION is, -->
+      <div id="header"></div>
+
+    <!--This is where the BODY is -->
+        <div class="container loader">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2 class= "title">Other's have done it yet, </br>
+                if you want to write about us, go ahead. </h2>
+              <p class="informative-text">Interested in featuring Comcarde or Bridge payments app in your publication? Great! For more information, or to request an interview, e-mail press@comcarde.com. Also, check out our team page for bios and pics.</p>
+              <div class="row spacing-top">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 article"> 
+                  <a target="_blank" href="http://www.heraldscotland.com/business/company-news/purge-of-local-toffs-at-comcarde-as-the-company-seeks-3m-to-grow-ahead-of-fina.25875817">
+                    <ul class="dashed-separator">
+                      <li><div class="title-article"><img class="article-images" src="images/press/herald-scotland.png"/>Herald Scotland</div></li>
+                      <li><div class="entry-text"><p><strong>Purge of 'local toffs' at Comcarde...</strong></br>An Inverness-based fi­nancial ­technology company that aims to take the global smartphone payment apps market by storm has purged its board of four well-connected Highland businessmen as it seeks to raise £3 million...</p>
+                      </div></li>
+                    </ul>
+                </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <a target="_blank" href="http://www.talentscotland.com/work/companies/c/comcarde-ltd">
+                    <ul>
+                      <li><div class="title-article"><img class="article-images"src="images/press/talent-scotland.png"/>Talent Scotland</div></li>
+                      <li><div class="entry-text"><p><strong>Comcarde are mobile payments...</strong></br>Comcarde Ltd has developed the Bridge mobile payment app, providing a revolutionary increase in payment security and convenience, with a consistent interface and user experience in all three main payment arenas...</p>
+                      </div></li>
+                    </ul>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row materials-section">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <ul>
+                    <li>
+                  <h3>Comcarde materials
+                  </h3>
+                </li>                  
+                <li><img class="suitcase" src="images/press/suitcase.png" /></li>
+                <li><p class="materials-text">We have put together for you some materials. If you need to have our logos, graphic materials, etc and some office photos, download the archive.
+                  </p></li>
+              </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+     <!--This is where the FOOTER is -->
+     <div id="footer"></div>
+      <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.  </p> 
+      <![endif]-->
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.  This is Vanessa Rodriguez Tracking ID -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-57178357-1');ga('send','pageview');
+      </script>
+
+      <!-- build:js scripts/main.js -->
+      <script src="bower_components/jquery/jquery.js"></script>
+      <script src="scripts/hello.js"></script>
+      <!-- endbuild -->
+
+      <!-- build:js scripts/vendor/bootstrap.js -->
+      <script src="bower_components/bootstrap/js/affix.js"></script>
+      <script src="bower_components/bootstrap/js/alert.js"></script>
+      <script src="bower_components/bootstrap/js/dropdown.js"></script>
+      <script src="bower_components/bootstrap/js/tooltip.js"></script>
+      <script src="bower_components/bootstrap/js/modal.js"></script>
+      <script src="bower_components/bootstrap/js/transition.js"></script>
+      <script src="bower_components/bootstrap/js/button.js"></script>
+      <script src="bower_components/bootstrap/js/popover.js"></script>
+      <script src="bower_components/bootstrap/js/carousel.js"></script>
+      <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+      <script src="bower_components/bootstrap/js/collapse.js"></script>
+      <script src="bower_components/bootstrap/js/tab.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>

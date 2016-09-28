@@ -1,0 +1,784 @@
+/* Copyright and Design by
+ * Comcarde Ltd
+ * http://www.comcarde.com/ */
+
+@import "../bower_components/bootstrap/less/bootstrap.less";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700);
+/* ============= General TEXT and HELPERS STYLES ===========*/
+/*==========================================================*/
+input {
+    background-color: rgba(255,255,255,0.5);
+}
+input:focus {
+    outline:none;
+    background-color: #efefef;
+}
+
+.video-container {
+	text-align:center;
+}
+
+.video-container {
+ position: relative;
+ padding-top: 56.25%;
+}
+
+
+video, object {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.boxes {
+   margin: 0;
+   padding: 0 40px;
+}
+
+.ta-title {
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding:0;
+  margin: 100px 0;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.centered {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.ta-section-title {
+  font-family: 'Montserrat', sans-serif;
+ font-size: 2.3rem;
+ color: rgba(0, 0, 0, 0.7);
+    margin: 15px 0;
+}
+
+.ta-text {
+  font-family: 'Fira Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ta-section-title-image {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-space: 1px;
+  line-height: 3;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ta-text-image {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+  letter-space: 1px;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  margin: 0;
+  padding: 60px;
+}
+
+.margin-top-20 {
+  margin-top: 300px;
+}
+
+.margin-top-10 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.margin-bottom {
+  margin-bottom: 100px;
+}
+
+.image {
+  background-image:url("http://zoompf.com/wp-content/uploads/2014/11/blogNov2014_red_original.png");
+  height: 5%;
+  width: 100%;
+}
+
+.image02 {
+	max-width: 900px;
+  margin: 0 auto;
+}
+
+.phone-image {
+	max-width: 100%;
+}
+
+.bridge-header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  letter-space: 1px;
+  line-height: 3;
+  color: rgba(207,0,0,0.8);
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -3px;
+  color: #434343;
+  position: absolute;
+  top:36%;
+  left:15%;
+  margin: 0;
+  padding: 17px;
+}
+h1 span {
+  color: #cf0000;
+}
+
+/* ============= JotForm Styles==  ===========*/
+/* ===========================================*/
+
+#mc_embed_signup {
+   margin-top: 20%;
+   position: absolute;
+   background: rgba(255,255,255, 0.3);
+}
+
+.signup-form {
+	//margin-top: 20%;
+	//position:absolute;
+	z-index: 40000;
+}
+
+.form-header {
+	font-size: 2em;
+	text-transform: none;
+}
+
+.form-label {
+	color: #333;
+    font-family: helvetica;
+    font-size: 1.3em;
+}
+
+.form-textbox {
+	border: none;
+	padding: 10px 30px;
+	border-radius: 20px;
+	background: #efefef;
+	width: 300px;
+}
+
+.form-submit-button {
+	 border: none;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #cf0000;
+    color: #efefef;
+}
+
+.form-buttons-wrapper {
+    margin-left: 156px;
+    right: 0;
+    text-align: right;
+}
+
+/* --------- Header    ----------- */
+/* ------------------------------- */
+a[id= "info"]:target ~ #main article.article {
+    -webkit-transform: translateY( -500px);
+    transform: translateY( -500px );
+}
+
+.article {
+    width: 100%;
+    height: 500px;
+    z-index:0;
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+    transition: transform 2s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.article p {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-size: 4rem;
+    position:relative;
+    line-height: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+/* ----- Subscription Form  ------ */
+/* ------------------------------- */
+.logo-container {
+	  position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.logo {
+	width: 300px;
+}
+
+.main-container {
+	position: relative;
+    left: 50%;
+    top: 60%;
+    width: 90%;
+    margin-left: -45%;
+    overflow: hidden;
+    margin-top: -27%;
+}
+
+.text-tagline {
+	margin:0;
+	text-align: left;
+}
+
+.p-text-tagline {
+	 font-family: 'Fira Sans', sans-serif;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* ============= Form styles here  ===========*/
+/* ===========================================*/
+.jotform-form {
+	margin: 0;
+	padding: 0;
+	width: 400px;
+}
+
+.form-section {
+	padding: 0;
+	margin: 0;
+}
+
+.form-side {
+	height: auto;
+}
+
+.form {
+	margin: 0;
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+.form-submit-button-container {
+	text-align: right;
+}
+
+.form-submit-button {
+	margin-right: 0;
+}
+
+.form-submit-button-02 {
+	border: 1px solid #cf0000;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.2);
+    color: #333;
+}
+.form-submit-button-02:hover {
+   text-decoration: none;
+	border: 1px solid #cf0000;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.7);
+    color: #333;
+}
+
+.button-03 {
+   position: absolute;
+   left: 5px;
+   bottom: 17px;
+}
+
+
+/* ------------- Scrolling dots -------------- */
+/* ------------------------------------------- */
+
+.scrolling-container {
+	 position: fixed;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+    top: 200px;
+	 z-index: 10000000;
+}
+
+.scrolling-dots {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.circle {
+	margin:20px 0;
+	padding:0;
+	border-radius: 50%;
+	width:10px;
+	height: 10px;
+	background-color: rgba(0,0,0, 0.3);
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circle:hover {
+	background-color: rgba(0,0,0, 0.6);
+}
+
+.circle:active{
+	background-color: rgb(0,0,0);
+}
+
+/* ------------- Padlock Image  -------------- */
+/* ------------------------------------------- */
+.padlock-image {
+    width: 200px;
+    margin: 38px;
+    padding: 30px;
+}
+
+/* --------- Google Maps Style ----------- */
+/* --------------------------------------- */
+
+.google-maps {
+    position: relative;
+	 padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+	 margin: 0;
+}
+
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        //left: 0;
+        width: 100% !important;
+        height: 400px;
+}
+
+/* ============= Bridge Animation  ===========*/
+/* ===========================================*/
+.holder {
+	margin: 0 auto;
+  position:relative;
+  width:300px;
+  height:auto;
+  display: block;
+}
+
+#layer-1 {
+-webkit-animation-name: spin;
+-webkit-animation-duration: 4000ms;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-moz-animation-name: spin;
+-moz-animation-duration: 4000ms;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-ms-animation-name: spin;
+-ms-animation-duration: 4000ms;
+-ms-animation-iteration-count: infinite;
+-ms-animation-timing-function: linear;
+
+animation-name: spin;
+animation-duration: 4000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.shape-4, .shape-5, .shape-6 {
+
+}
+.shape-1, .shape-4 {
+  opacity: 0.2;
+}
+.shape-2, .shape-5 {
+  opacity: 0.5;
+}
+.shape-3, .shape-6 {
+  opacity: 0.5;
+}
+h1 {
+     margin: 20px;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -3px;
+  color: #434343;
+  position: absolute;
+  top:36%;
+  left:28%;
+}
+h1 span {
+  color: #cf0000;
+}
+/* ============= Features explanation  ===========*/
+/* ===============================================*/
+
+.features {
+	text-align: center;
+	ul {
+		display: inline-block;
+
+		li {
+         margin: 10px;
+         padding: 0;
+			display:inline-block;
+		}
+	}
+}
+
+.features-images {
+   width: 150px;
+}
+
+/* ============= Footer  =====================*/
+/* ===========================================*/
+.social-icons {
+   display: inline-block;
+   li {
+      display: inline-block;
+   }
+}
+
+.legal {
+   bottom: 0;
+   margin-bottom: 0;
+}
+
+.images-bridge {
+    margin: 30px;
+    padding: 0;
+}
+
+.icon {
+   margin: 0px;
+   padding: 10px;
+   color: #000;
+}
+
+.icon:hover {
+   text-decoration: none;
+   color: rgba(0,0,0,0.8);
+}
+
+.phone-number {
+     font-family: 'Fira Sans', sans-serif;
+       font-size: 1.8rem;
+       line-height: 2;
+       color: rgba(0, 0, 0, 0.7);
+}
+
+.phone-number:hover {
+     text-decoration: none;
+  }
+
+.legal {
+   ul {
+      li{
+         a{
+            font-family: "Fira Sans", Arial, sans-serif;
+            color: #000;
+            text-decoration: none;
+         }
+         a:hover {
+            color: #000;
+            text-decoration: underline;
+         }
+      }
+   }
+}
+/* ========================= STYLES FOR INVESTING ============================= */
+/* ========================================================================== */
+.investment-box {
+    margin: 0;
+    padding: 20px;
+    background: rgba(0,202,195,0.3);
+    height: 200px;
+}
+
+/* ========================= STYLES FOR LEGAL PAGES ============================= */
+/* ========================================================================== */
+.legal {
+    /* 1ST NAVIGATION */
+    /* ----------------------------------------------------*/
+    .legal-nav {
+    	width: 100%;
+    	margin: 0;
+    	padding-top: 32px;
+    	text-align: center;
+    }
+    .legal-nav ul {
+    	margin:0;
+    	padding: 0;
+    	display: inline-block;
+    	width: 100%;
+    }
+    .legal-nav ul li {
+    	display: inline;
+    	margin: -2px;
+    	padding: 0;
+    }
+
+        hr {
+          border-top: 1px solid #cf0000;
+        }
+
+    .legal-nav ul li a:focus {
+    	background: #cf0000;
+    	color: #fff;
+    }
+
+    .legal-nav ul li a:hover {
+    	background: #ddd;
+    	color: #333;
+    	 -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      -o-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .legal-nav-item {
+    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	color: #333;
+    	font-size: 0.9em;
+    	font-weight: 300;
+    	 display: inline-block !important;
+    }
+
+    .legal-nav-item {
+    	&.active {
+    		color: #fff;
+    		background: #cf0000;
+    		display: inline-block !important;
+    	}
+    }
+}
+
+/* ========== COOKIE POLICY ========= */
+/* ================================== */
+
+.cookie-policy-header {
+  padding-top: 80px;
+}
+
+/* ========== Graph =================*/
+svg {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ovals {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  z-index: 2000;
+  stroke-width: 9px;
+
+  -webkit-animation: widthIn 2s none; /* Safari 4+ */
+  -moz-animation:    widthIn 2s none; /* Fx 5+ */
+  -o-animation:      widthIn 2s none; /* Opera 12+ */
+  animation:         widthIn 2s none;
+}
+
+@-webkit-keyframes widthIn {
+  0%   { stroke-width: 0; }
+  100% { stroke-width: 9; }
+}
+
+@-moz-keyframes widthIn {
+  0%   { stroke-width: 0; }
+  100% { stroke-width: 9; }
+}
+
+@-o-keyframes widthIn {
+  0%   { stroke-width: 0; }
+  100% { stroke-width: 9; }
+}
+
+@keyframes widthIn {
+  0%   { stroke-width: 0; }
+  100% { stroke-width: 9; }
+}
+
+.ovals-hover {
+  stroke-width: 14;
+  color:#B6E7DA;
+  z-index: 4000;
+}
+
+/* ============= VIDEO  ==============*/
+/* ===========================================*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ============= Media Queries  ==============*/
+/* ===========================================*/
+
+@media screen and (min-width: 1200px) {
+   .video-container {
+		margin: 0 auto;
+   }
+}
+
+@media screen all and (max-width: 900px) {
+   .main-container {
+      position: relative;
+      left: 0;
+      top: 90px;
+      margin-left: 0;
+      overflow: hidden;
+      margin-top: -80px;
+      width: 100%;
+   }
+   .jotform-form {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .margin-top-20 {
+      margin-top: 10px;
+   }
+   .margin-top-10 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   .features {
+      ul {
+         margin: 0px;
+         padding: 0px;
+      }
+   }
+    .small-top-margin {
+       margin-top: 90px;
+   }
+
+   .ta-title {
+      margin: 50px 0;
+   }
+
+   h1 {
+      margin: 18px;
+      padding: 0;
+   }
+
+}
+
+@media screen and (max-width: 750px) {
+   .main-container {
+      position: relative;
+      left: 0;
+      top: 90px;
+      margin-left: 0;
+      overflow: hidden;
+      margin-top: -80px;
+      width: 100%;
+   }
+   .jotform-form {
+      width: 100%;
+   }
+   .margin-top-20 {
+      margin-top: 10px;
+   }
+   .margin-top-10 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   .features {
+      ul {
+         margin: 0px;
+         padding: 0px;
+      }
+   }
+    .small-top-margin {
+       margin-top: 90px;
+   }
+
+   .ta-title {
+      margin: 50px 0;
+   }
+
+   h1 {
+      margin: 18px;
+      padding: 0;
+   }
+
+}
+
+@media screen and (max-width: 320px) {
+
+   .fom-header {
+      font-size: 1.7em;
+   }
+
+   .form-textbox {
+      width: 250px;
+   }
+
+   .form-submit-button-02 {
+   margin: 5x;
+   }
+}
